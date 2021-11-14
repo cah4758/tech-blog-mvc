@@ -19,6 +19,15 @@ const loginFormHandler = async (event) => {
   }
 };
 
+const registerNewUser = async () => {
+  console.log("Register new user");
+  document.location.replace("/api/users/register");
+};
+
 document
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);
+
+document
+  .querySelector(".register-btn")
+  .addEventListener("click", registerNewUser);
