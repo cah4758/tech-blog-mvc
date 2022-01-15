@@ -16,7 +16,7 @@ const hbs = exphbs.create({});
 const sess = {
   secret: "Secret",
   cookie: {
-    maxAge: 6000,
+    httpOnly: true,
   },
   resave: false,
   saveUninitialized: true,
