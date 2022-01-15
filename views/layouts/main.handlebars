@@ -12,11 +12,11 @@
     />
   </head>
 
-  <body>
+  <body class="bg-secondary">
     <header class="display-flex justify-space-between align-center p-2">
       <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <div class="container-fluid">
-          <h1 class="navbar-brand">console.Blog</h1>
+          <a class="navbar-brand"><h1>console.Blog</h1></a>
           <br />
           <button
             class="navbar-toggler"
@@ -42,7 +42,7 @@
                 <a class="nav-link dashboard" href="/">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link dashboard" href="/">Login</a>
+                <a class="nav-link dashboard" href="/login">Login</a>
               </li>
               {{#if logged_in}}
                 <li class="nav-item">
